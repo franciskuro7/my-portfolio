@@ -1,0 +1,163 @@
+.nav {
+    width: 100%;
+    height: 5em;
+    background: rgb(22, 22, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5em;
+    color: #fff;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    color: blue;
+    filter: invert(1);
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.nav-list {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav span {
+    color: #fff;
+    cursor: pointer;
+    border: 0.9px solid #fff;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.menu {
+    font-size: 30px;
+    padding: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.menu:hover {
+    background: rgba(107, 107, 107, 0.466);
+}
+
+@media screen and (max-width: 769px) {
+    .nav {
+        padding: 20px;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .nav span {
+        display: none;
+    }
+
+    .nav-mobile {
+        position: fixed;
+        inset: 0;
+        background: rgb(22, 22, 22);
+        display: inherit;
+        transition: transform 0.3s ease;
+        z-index: 100;
+    }
+
+    .nav-mobile.show {
+        transform: translateX(0);
+    }
+
+    .nav-mobile.hide {
+        transform: translateX(-100%);
+    }
+
+    .sub-nav {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1.3rem;
+        justify-content: space-between;
+    }
+
+    .nav-mobile .cancel{
+        font-size: 35px;
+        font-weight: 400;
+        padding: 6px ;
+        color: white;
+        opacity: 0.7;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-mobile .cancel:hover {
+        background: rgba(88, 88, 88, 0.466);
+        border-radius: 3px;
+    }
+
+    .logo-mobile {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-mobile img {
+        width: 100%;
+        height: 100%;
+        color: blue;
+        filter: invert(1);
+    }
+
+    .nav-mobile ul {
+        width: 100%;
+        padding: 0px 10px;
+    }
+
+    .nav-list-mobile {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 400;
+    }
+
+    .nav-mobile ul li {
+        list-style: none;
+        padding: 13px;
+        border-radius: 3px;
+        margin-top: .7rem;
+        transition: .3s ease-in-out;
+    }
+
+    .nav-mobile ul li:hover {
+        background: rgba(107, 107, 107, 0.466);
+
+    }
+
+    .nav-mobile>span {
+        position: absolute;
+        color: #fff;
+        cursor: pointer;
+        border: 0.9px solid #fff;
+        padding: 10px;
+        border-radius: 4px;
+        bottom: 2rem;
+        left: 1rem;
+    }
+}

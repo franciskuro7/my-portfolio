@@ -1,0 +1,38 @@
+.profile-wrapper {
+    width: 100%;
+    background: rgb(216, 183, 183);
+    padding: 6em 5em;
+}
+
+.profile-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px, 1fr));
+    /* background-color: rgba(22,22,22); */
+}
+
+.profile-content p{
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+
+
+
+
+
+@media screen and (max-width:773px) {
+    .profile-wrapper{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:460px){
+    .profile-content{
+        font-size: 13px;
+        font-weight: 400;
+        overflow-wrap: break-word;
+    }
+}
+
