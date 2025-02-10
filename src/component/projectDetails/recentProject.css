@@ -101,6 +101,8 @@
     }
 }
 
+
+
 @media screen and (max-width: 640px) {
     .recent-project h1{
         font-size: 2.3rem;
@@ -113,6 +115,7 @@
         width: 100%;
     }
 }
+
 @media screen and (max-width:460px){
 
     

@@ -1,0 +1,81 @@
+.skills-details {
+    width: 100%;
+    padding: 2rem 5em;
+    background: #000000;
+}
+
+.skills-details h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    margin: 1.5rem 0px;
+}
+
+.skills-wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.skills-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 22, 22);
+    border-radius: 10px 10px 0px 0px;
+}
+
+.skills-content h2 {
+    font-size: 1.3rem;
+    color: #0D0D0D;
+    font-weight: 400;
+    background: #CCD5AE;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+}
+
+.skills-content span {
+    font-size: 1.4rem;
+    opacity: .8;
+    color: white;
+    font-weight: 400;
+    background: rgba(22, 22, 22);
+    padding:15px 20px;
+    border-top: 1px solid #2c2c2c;
+}
+
+
+
+
+@media screen and (max-width: 773px) {
+    .skills-details {
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .skills-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .skills-details h1 {
+        font-size: 2rem;
+    }    
+
+    .skills-content {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 460px) {
+    .skills-details h1 {
+        font-size: 1.7rem;
+    }
+}

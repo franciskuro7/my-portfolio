@@ -8,6 +8,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import SocialIcons from '../socialIcons/socialIcons';
 
 
 
@@ -29,13 +30,7 @@ const Footer = () => {
 
                 <div className="sicial-media">
                     <h2>My Social Media</h2>
-
-                    <div className="social-media-wrapper">
-                        <Link to="/" className='social-icons'><FaFacebookF className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaLinkedinIn className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaGithub className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaXTwitter className="social-media-icons" /></Link>
-                    </div>
+                    <SocialIcons />
                 </div>
             </footer>
         </>

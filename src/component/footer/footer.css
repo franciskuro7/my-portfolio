@@ -29,24 +29,6 @@ footer h2 {
     color: white;
     font-size: 25px;
 }
-.social-media-wrapper {
-    display: flex;
-    gap: 1em;
-}
-
-.social-media-wrapper .social-icons {
-    padding: 10px 5px 5px 5px;
-    border-radius: 4px;
-    background: rgba(107, 107, 107, 0.466);
-    
-}
-
-.social-media-wrapper .social-media-icons {
-    font-size: 20px;
-    color: white;
-    opacity: 0.9;
-
-}
 
 @media screen and (max-width: 769px){
     footer{
