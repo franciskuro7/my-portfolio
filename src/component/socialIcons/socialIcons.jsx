@@ -11,20 +11,31 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-const SocialIcons =()=>{
+const SocialIcons = () => {
 
-    return(
+    return (
         <>
-             <div className="sicial-media">
-                    {/* <h2>My Social Media</h2> */}
+            <div className="sicial-media">
+                {/* <h2>My Social Media</h2> */}
 
-                    <div className="social-media-wrapper">
-                        <Link to="/" className='social-icons'><FaFacebookF className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaLinkedinIn className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaGithub className="social-media-icons" /></Link>
-                        <Link to="/" className='social-icons'><FaXTwitter className="social-media-icons" /></Link>
-                    </div>
+                <div className="social-media-wrapper">
+                    <Link to="https://web.facebook.com/profile.php?id=61568477158898" className='social-icons'>
+                        <FaFacebookF className="social-media-icons" />
+                    </Link>
+
+                    <Link to="www.linkedin.com/in/fineface-kuroghoekigha-762158279" className='social-icons'>
+                        <FaLinkedinIn className="social-media-icons" />
+                    </Link>
+
+                    <Link to="https://github.com/franciskuro7" className='social-icons'>
+                        <FaGithub className="social-media-icons" />
+                    </Link>
+
+                    <Link to="https://x.com/franciskuro7" className='social-icons'>
+                        <FaXTwitter className="social-media-icons" />
+                    </Link>
                 </div>
+            </div>
         </>
     )
 

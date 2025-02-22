@@ -1,0 +1,51 @@
+h1,h2,h3,h4,h5,h6{
+    color: #f2f2f2;
+    font-weight: 300;
+}
+p,span{
+    color: #f2f2f2;
+    font-weight: 300;
+}
+
+
+.property-wrapper{
+    padding: 5em;
+    width: 100%;
+    background: #000;
+}
+.property-wrapper h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.property-content{
+    width: 100%;
+    height: inherit;
+}
+.property{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    background: rgba(22,22,22);
+    gap: 20px;
+    border-radius: 5px;
+    padding: 20px;
+
+}
+.property-col{
+    flex: 1;
+}
+
+.propert-content-period{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+@media screen and (max-width:773px) {
+    .property-wrapper{
+        padding: 20px;
+    }
+}

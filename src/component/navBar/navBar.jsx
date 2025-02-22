@@ -38,12 +38,12 @@ const NavBar = () => {
                         </li>
 
                         <li>
-                            <Link to="/about" className='nav-list'> About Us</Link>
+                            <Link to="#about" className='nav-list'> About Us</Link>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <Link to="/blog" className='nav-list'>Blog</Link>
-                        </li>
+                        </li> */}
                     </ul>
 
                     <span>Get In Touch</span>
@@ -73,7 +73,7 @@ const NavBar = () => {
 
                         <Link to="/project" className='nav-list-mobile'><li> About Us</li></Link>
 
-                        <Link to="/blog" className='nav-list-mobile'> <li>Blog</li></Link>
+                        {/* <Link to="/blog" className='nav-list-mobile'> <li>Blog</li></Link> */}
 
                         {/* <Link className='nav-list-mobile'> <li>Contact Us</li></Link> */}
 

@@ -50,6 +50,12 @@
         width: 100%;
         background-color: rgba(22,22,22);
     }
+
+    .profile-text h4{
+        font-size: 18px;
+        
+    }
+
     .profile-img{
         width: 100%;
         
