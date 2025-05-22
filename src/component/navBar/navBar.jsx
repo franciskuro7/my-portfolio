@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
 import softtech from '../../assets/image/anchor.svg'
 
-import { Link, } from "react-router-dom"
+import { Link, Navigate, } from "react-router-dom"
 import { IoMenu } from "react-icons/io5";
 import { LiaTimesSolid } from "react-icons/lia";
+import { FaWhatsapp } from "react-icons/fa";
 
 import './nav.css'
+import Button from '../button/button';
 
 
 const NavBar = () => {
 
-    const [navBarOpenAndClose, setNavBarOpenAndClose]= useState("hide")
+    const [navBarOpenAndClose, setNavBarOpenAndClose] = useState("hide")
 
 
 
     const handleNavBarOpenAndClose = () => {
         setNavBarOpenAndClose(prevState => prevState === "hide" ? "show" : "hide");
     }
-
-
+    const handleContact =()=>{
+        window.location.href = "tel:+2348160866646";
+    }
 
     return (
         <>
@@ -45,8 +48,12 @@ const NavBar = () => {
                             <Link to="/blog" className='nav-list'>Blog</Link>
                         </li> */}
                     </ul>
-
-                    <span>Get In Touch</span>
+                    <Button
+                        classname={'primary'}
+                       
+                        title={'Get in Touch'}
+                        onclick={handleContact}
+                        />
                     <IoMenu className='menu' onClick={handleNavBarOpenAndClose} />
 
 
@@ -62,10 +69,10 @@ const NavBar = () => {
                         <div className="logo-mobile">
                             <img src={softtech} alt="logo" />
                         </div>
-                        <LiaTimesSolid className="cancel" onClick={handleNavBarOpenAndClose}/>
+                        <LiaTimesSolid className="cancel" onClick={handleNavBarOpenAndClose} />
                     </div>
 
-                    <ul>
+                    <ul onClick={handleNavBarOpenAndClose}>
 
                         <Link to="/" className='nav-list-mobile'><li>Home</li></Link>
 
@@ -79,10 +86,16 @@ const NavBar = () => {
 
                     </ul>
 
-                    <span>Get In Touch</span>
+                    {/* <Button
+                    className='hello'
+                    onclick={handleNavBarOpenAndClose}
+                    title={'get in touch'}
+                    /> */}
+
+                    <span onClick={handleNavBarOpenAndClose} >Get In Touch</span>
                 </div>
             </nav>
-            
+
         </>
     )
 }

@@ -53,10 +53,11 @@
     flex-wrap: wrap;
     gap:10px;
 }
-.recent-project-toolds-used{
+.recent-project-tools-used{
     padding: 5px;
     margin-left: 2px;
     background: rgb(44, 44, 44);
+    border-radius: 2px;
     color: white;
 }
 
@@ -126,7 +127,7 @@
     flex-wrap: wrap;
     gap: 5px;
 }
-.recent-project-toolds-used{
+.recent-project-tools-used{
     font-size: 13px;
 }
 

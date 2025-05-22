@@ -1,5 +1,5 @@
 import React from "react";
-import portfolio12 from '../../assets/img/portfolio12.jpg'
+import profile from '../../assets/img/profile.jpeg'
 import './profile.css'
 import SocialIcons from "../socialIcons/socialIcons";
 
@@ -23,7 +23,7 @@ const Profile = () => {
                         
                     </div>
                     <div className="profile-img">
-                        <img src={portfolio12} alt="" />
+                        <img src={profile} alt="" />
                     </div>
 
             </div>

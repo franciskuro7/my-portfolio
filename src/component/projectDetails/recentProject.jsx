@@ -33,11 +33,11 @@ const RecentProject = () => {
                                 to grade assignments and provide feedback.
                             </p>
                             <div className="recent-project-tools">
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
+                                <span className="recent-project-tools-used">Reactjs</span>
+                                <span className="recent-project-tools-used">Reactjs</span>
+                                <span className="recent-project-tools-used">Reactjs</span>
+                                <span className="recent-project-tools-used">Reactjs</span>
+                                <span className="recent-project-tools-used">Reactjs</span>
                             </div>
                             <div className="recent-project-buttons">
                                 <Link className="btn-link-tags"> <span className="btn">Live Demo</span></Link>
