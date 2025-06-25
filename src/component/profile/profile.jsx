@@ -11,9 +11,9 @@ const Profile = () => {
 
                     <div className="profile-text">
                         <h4>
-                            Hey! I'm Francis Kuro, a Full Stack Website Developer from
+                            Hey! I'm Fineface Kuroghoekigha Francis, a Full Stack Website Developer from
                             Nigeria who loves building websites that make businesses
-                            stand out. I work with React, TypeScript, Node.js,
+                            stand out. I work with React.js, Next.js, Node.js,
                             and Express.js to create fast, user-friendly sites that
                             actually solve problems. I'm always
                             excited to take on new challenges. Got a project in mind?

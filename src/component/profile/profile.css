@@ -22,14 +22,15 @@
     object-fit: cover;
 }
 .profile-text h4{
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: 300;
+    text-align: justify;
     color: white;
     opacity: 0.8;
     text-wrap: wrap;
     word-wrap: break-word;
     white-space: normal;
-    margin-bottom: 1.3rem;
+    margin-bottom: 4.3rem;
     
 }
 

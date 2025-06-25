@@ -1,7 +1,6 @@
 .recent-project{
     width: 100%;
     padding: 2rem 5em;
-    /* background: red; */
     background: #000;
 }
 .recent-project h1{
@@ -18,7 +17,6 @@
 
 .recent-project-details{
     background: rgb(22, 22, 22);
-    /* height: 500px; */
 }
 .recent-project-image{
     width: 100%;
@@ -42,10 +40,14 @@
     font-size: 14px;
     font-weight: 400;
     text-align: justify;
+    word-break: break-all;
+    white-space: normal;
     line-height: 1.5rem;
     color: #888;
 }
-
+a{
+    text-decoration: none;
+}
 .recent-project-tools{
     width: 100%;
     margin-top: 1rem;
@@ -67,19 +69,19 @@
 }
 
 .recent-project-buttons .btn-link-tags{
-    margin: 1.6rem 0px;
+    margin: 1rem 0px;
 }
 
 .recent-project-buttons .btn{
     padding: 8px;
     font-size: 14px;
     opacity: .9;
-    margin-top: 1.2rem;
     border-radius: 4px;
     background: rgb(44, 44, 44);
     color: white;
     transition: .3s ease;
 }
+
 .recent-project-buttons .btn:hover{
     background: rgb(66, 66, 66);
 }

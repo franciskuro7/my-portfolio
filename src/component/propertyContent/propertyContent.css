@@ -46,12 +46,15 @@ span {
 .project-content {
     width: 100%;
     height: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
 }
 
 .project-content-wrapper {
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 50px;
     background: rgba(22, 22, 22);
     gap: 20px;
     border-radius: 5px;
@@ -64,12 +67,12 @@ span {
 }
 
 .project-col h2 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 500;
 }
 
 .project-col p {
-    font-size: 20px;
+    font-size: 1rem;
     text-align: justify;
     color: lightgray;
     line-height: 1.4em;
@@ -87,12 +90,12 @@ span {
 }
 
 .project-category h2 {
-    font-size: 20px;
+    font-size: 1rem;
     line-height: 2rem;
 }
 
 .project-category strong {
-    font-size: 17px;
+    font-size: 0.875rem;
     font-weight: 500;
     line-height: 16px;
     color: rgba(242, 242, 242, 0.9);
@@ -100,27 +103,26 @@ span {
 
 .project-content-tools {
     display: flex;
-    gap: 20px;
+    gap: 1rem;
 }
 
 .project-tools {
     padding: 7px;
-    margin-left: 2px;
     background: rgb(44, 44, 44);
     border-radius: 2px;
     color: white;
+    font-size: 0.875rem;
 }
 
 .demo-prev {
     margin: 30px 0px;
     display: flex;
-    gap: 10px;
+    gap: 1rem;
 }
 
 .demo-prev span {
-    padding: 7px 10px;
-    margin-left: 2px;
-    font-size: 18px;
+    padding: 7px;
+    font-size: 0.875rem;
     background: rgb(44, 44, 44);
     border-radius: 2px;
     color: white;
@@ -141,6 +143,7 @@ img {
 @media screen and (max-width:1100px) {
     .project-content-wrapper {
         flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .project-col-img {
@@ -158,53 +161,33 @@ img {
 
 
 @media screen and (max-width: 640px) {
-    .project-col h2 {
-        font-size: 24px;
-    }
-
-    .project-col p {
-        font-size: 14px;
-    }
-
 
     .project-content-period {
         justify-content: space-between;
         gap: 0rem;
     }
 
-    .project-category h2 {
-        font-size: 17px;
-    }
-    .project-category strong {
-        font-size: 18px;
-    }
     .project-content-tools {
         flex-wrap: wrap;
     }
-    .project-content-tools .project-tools{
-        font-size: 18px;
+
+    .project-content-tools .project-tools {
         font-weight: 400;
     }
 }
 
 @media screen and (max-width:460px) {
-    .project-category h2 {
-        font-size: 14px;
-    }
+
     .project-col p {
         text-align: start;
     }
-    .project-category strong {
-        font-size: 13px;
-    }
-    .project-content-tools .project-tools{
-        font-size: 14px;
-    }
+
+   
+
     .demo-prev span {
-        font-size: 13.3px;
         padding: 7px;
     }
-    
+
 
 
 }

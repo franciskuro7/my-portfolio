@@ -10,8 +10,8 @@ const Hero = () => {
         <>
             <div className="hero">
                 <h2>
-                    I visualize the benefits of possessing
-                    A web-Page Layout and general consultants.
+                    Helping business and Company Build Websites, that 
+                    Works and Suits there Business and Companies.
                 </h2>
                 <div className="hero-specialize-wrapper">
                     <div className="hero-specialize">

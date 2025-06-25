@@ -1,6 +1,9 @@
 import React from "react";
 
-import portfolio7 from '../../assets/img/portfolio7.jpg'
+import portfolio7 from '../../assets/img/portfolio1.jpg'
+import portfolio6 from '../../assets/img/portfolio-6.jpg'
+import portfolio3 from '../../assets/img/portfolio12.jpg'
+
 import './recentProject.css'
 
 
@@ -36,8 +39,6 @@ const RecentProject = () => {
                                 <span className="recent-project-tools-used">Reactjs</span>
                                 <span className="recent-project-tools-used">Reactjs</span>
                                 <span className="recent-project-tools-used">Reactjs</span>
-                                <span className="recent-project-tools-used">Reactjs</span>
-                                <span className="recent-project-tools-used">Reactjs</span>
                             </div>
                             <div className="recent-project-buttons">
                                 <Link className="btn-link-tags"> <span className="btn">Live Demo</span></Link>
@@ -51,7 +52,7 @@ const RecentProject = () => {
                     <div className="recent-project-details">
 
                         <div className="recent-project-image">
-                            <img src={portfolio7} alt="" />
+                            <img src={portfolio6} alt="" />
                         </div>
 
 
@@ -66,9 +67,6 @@ const RecentProject = () => {
                             <div className="recent-project-tools">
                                 <span className="recent-project-toolds-used">Reactjs</span>
                                 <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
                             </div>
                             <div className="recent-project-buttons">
                                 <Link className="btn-link-tags"> <span className="btn">Live Demo</span></Link>
@@ -82,7 +80,7 @@ const RecentProject = () => {
                     <div className="recent-project-details">
 
                         <div className="recent-project-image">
-                            <img src={portfolio7} alt="" />
+                            <img src={portfolio3} alt="" />
                         </div>
                         <div className="recent-project-text">
                             <h2>Askify Q&A Platform</h2>
@@ -92,9 +90,6 @@ const RecentProject = () => {
                                 to grade assignments and provide feedback.
                             </p>
                             <div className="recent-project-tools">
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
-                                <span className="recent-project-toolds-used">Reactjs</span>
                                 <span className="recent-project-toolds-used">Reactjs</span>
                                 <span className="recent-project-toolds-used">Reactjs</span>
                             </div>

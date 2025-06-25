@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import softtech from '../../assets/image/anchor.svg'
+import softtech from '../../assets/image/softtech.png'
 
 import { Link, Navigate, } from "react-router-dom"
 import { IoMenu } from "react-icons/io5";
@@ -19,8 +19,8 @@ const NavBar = () => {
     const handleNavBarOpenAndClose = () => {
         setNavBarOpenAndClose(prevState => prevState === "hide" ? "show" : "hide");
     }
-    const handleContact =()=>{
-        window.location.href = "tel:+2348160866646";
+    const handleContact = () => {
+        window.location.href = "https://wa.me/+2348160866646?text=Thank%20you%20for%20contacting%20KU-TECH!%20Please%20let%20us%20know%20how%20we%20can%20help%20you%20but%20if%20urgent%C2%A0pls%C2%A0call."
     }
 
     return (
@@ -28,7 +28,9 @@ const NavBar = () => {
             <nav>
                 <div className="nav">
                     <div className="logo">
-                        <img src={softtech} alt="logo" />
+                        <Link to="/">
+                            <img src={softtech} alt="logo" />
+                        </Link>
                     </div>
                     <ul>
 
@@ -41,24 +43,16 @@ const NavBar = () => {
                         </li>
 
                         <li>
-                            <Link to="#about" className='nav-list'> About Us</Link>
+                            <Link to="/about" className='nav-list'> About Us</Link>
                         </li>
-
-                        {/* <li>
-                            <Link to="/blog" className='nav-list'>Blog</Link>
-                        </li> */}
                     </ul>
                     <Button
                         classname={'primary'}
-                       
                         title={'Get in Touch'}
                         onclick={handleContact}
-                        />
+                    />
                     <IoMenu className='menu' onClick={handleNavBarOpenAndClose} />
-
-
                 </div>
-
 
 
                 {/* MOBILE SCREEN HERE */}
@@ -67,7 +61,9 @@ const NavBar = () => {
 
                     <div className="sub-nav">
                         <div className="logo-mobile">
-                            <img src={softtech} alt="logo" />
+                            <Link to="/">
+                                <img src={softtech} alt="logo" />
+                            </Link>
                         </div>
                         <LiaTimesSolid className="cancel" onClick={handleNavBarOpenAndClose} />
                     </div>
@@ -80,23 +76,14 @@ const NavBar = () => {
 
                         <Link to="/project" className='nav-list-mobile'><li> About Us</li></Link>
 
-                        {/* <Link to="/blog" className='nav-list-mobile'> <li>Blog</li></Link> */}
-
-                        {/* <Link className='nav-list-mobile'> <li>Contact Us</li></Link> */}
-
                     </ul>
 
-                    {/* <Button
-                    className='hello'
-                    onclick={handleNavBarOpenAndClose}
-                    title={'get in touch'}
-                    /> */}
-
-                    <span onClick={handleNavBarOpenAndClose} >Get In Touch</span>
+                    <span onClick={() => { handleNavBarOpenAndClose(); handleContact() }}> Get In Touch</span>
                 </div>
-            </nav>
+            </nav >
 
         </>
+
     )
 }
 

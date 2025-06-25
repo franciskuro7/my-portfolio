@@ -9,8 +9,6 @@ import { ProjectData } from '../../data/projectData'
 
 const PropertyContent = () => {
 
-    console.log(ProjectData)
-
 
 
     return (
@@ -20,8 +18,6 @@ const PropertyContent = () => {
 
                 <div className="project-details">
                     <div className="project-content">
-
-
 
                         {ProjectData.map((data) => {
 

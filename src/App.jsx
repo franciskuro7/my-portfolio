@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import './App.css'
-import Home from './pages/home/home'
-import Project from './pages/project/project'
+import Home from './page/home/home'
+import Project from './page/project/project'
 
 function App() {
 
@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home /> }/>
         <Route path='/project' element={<Project /> }/>
-       {/*  <Route path='/blog' element={<Blog /> }/> */}
+        {/* <Route path='/blog' element={<Blog /> }/> */}
        
       </Routes>
     </Router>

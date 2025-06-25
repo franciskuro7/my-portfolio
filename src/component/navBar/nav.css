@@ -19,8 +19,6 @@
 .logo img {
     width: 100%;
     height: 100%;
-    color: blue;
-    filter: invert(1);
 }
 
 .nav ul li {
@@ -74,6 +72,9 @@
     .nav span {
         display: none;
     }
+    .primary{
+        display: none;
+    }
 
     .nav-mobile {
         position: fixed;
@@ -125,8 +126,6 @@
     .logo-mobile img {
         width: 100%;
         height: 100%;
-        color: blue;
-        filter: invert(1);
     }
 
     .nav-mobile ul {

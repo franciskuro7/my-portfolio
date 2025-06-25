@@ -6,18 +6,17 @@ import Profile from '../../component/profile/profile'
 import RecentProject from '../../component/projectDetails/recentProject'
 import SkillsDetails from '../../component/skillsDetails/skillsDetails'
 
-const Home = ()=>{
-    return(
+const Home = () => {
+    return (
         <>
-        <div>
-        <NavBar />
-
-        <Hero />
-        <Profile />
-        <SkillsDetails />
-        <RecentProject />
-        <Footer/>
-        </div>
+            <div>
+                <NavBar />
+                <Hero />
+                <Profile />
+                <SkillsDetails />
+                <RecentProject />
+                <Footer />
+            </div>
         </>
     )
 }
