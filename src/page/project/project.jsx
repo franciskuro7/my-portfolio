@@ -1,8 +1,9 @@
 import React from "react";
 import './project.css'
-import NavBar from "../../component/navBar/navBar";
+
 import PropertyContent from "../../component/propertyContent/propertyContent";
-import Footer from "../../component/footer/footer";
+import Footer from "../../component/footer";
+import NavBar from "../../component/navBar";
 
 
 

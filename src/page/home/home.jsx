@@ -1,10 +1,15 @@
 import React from 'react'
-import NavBar from '../../component/navBar/navBar'
-import Footer from '../../component/footer/footer'
-import Hero from '../../component/hero/hero'
-import Profile from '../../component/profile/profile'
+// import Profile from '../../component/profile/profile'
 import RecentProject from '../../component/projectDetails/recentProject'
 import SkillsDetails from '../../component/skillsDetails/skillsDetails'
+import ExploreMyOffer from '../../component/Explore-My-Offerings/ExploreMyOffer'
+import InfoForm from '../../component/infoForm/infoForm'
+import NavBar from '../../component/navBar'
+import Hero from '../../component/hero'
+import Services from '../../component/services'
+import Footer from '../../component/footer'
+
+
 
 const Home = () => {
     return (
@@ -12,9 +17,12 @@ const Home = () => {
             <div>
                 <NavBar />
                 <Hero />
-                <Profile />
+                {/* <Profile /> */}
                 <SkillsDetails />
+                <Services/>
                 <RecentProject />
+                <ExploreMyOffer />
+                <InfoForm/>
                 <Footer />
             </div>
         </>

@@ -8,7 +8,6 @@ import './recentProject.css'
 
 
 
-import NavBar from "../../component/navBar/navBar";
 import { Link } from "react-router-dom";
 
 
@@ -19,9 +18,12 @@ const RecentProject = () => {
             <div className="recent-project">
 
 
-                <h1> Recent Project</h1>
+                <h1> 
+                    Here are My Latest Projects <br />
+                    with their presentations
+                </h1>
 
-                <div className="recent-project-wrapper">
+                <div className="card-wrapper">
 
                     <div className="recent-project-details">
 
