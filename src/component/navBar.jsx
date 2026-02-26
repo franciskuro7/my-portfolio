@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { Link, Navigate, } from "react-router-dom"
 
 import softtech from "../assets/image/softtech.png"
-import Button from './call-to-action/button';
 
 import { IoMenu } from "react-icons/io5";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -10,16 +9,16 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 
 import {
-    Img, Logo, Menu, MobileNav, NavBarWrapper, NavList,
-    NavListWrapper, NavMobile, SubListMobile, SubNav, SubNavList,
-    SubNavMobile, SubNavMobileLi, SubNavMobileUl, SubNavWrapper, Cancel,
-    MobileNavList, Contact,
-    MobileBtn
+    Cancel, Menu, MobileBtn,
+    NavLinks, HireBtn, Logo, Nav, NavMobile, MobileNavList, MobileNav
+
+
 } from '../styles/navbar.styles';
-
-
+import { IoMdMenu } from 'react-icons/io';
 
 const NavBar = () => {
+
+
 
     const [navBarOpenAndClose, setNavBarOpenAndClose] = useState(false)
 
@@ -34,137 +33,58 @@ const NavBar = () => {
     }
 
     return (
-        <>
-            <NavBarWrapper>
-                <Logo>
-                    <Link to="/">
-                        <Img src={softtech} alt="logo" />
-                    </Link>
-                </Logo>
-
-                <NavListWrapper>
-                    <Link to="/" className='nav-list'>
-                        <NavList> Home</NavList>
-                    </Link>
-                    <NavList>
-                        Our Services
-                        <SubNavWrapper>
-                            <SubNav >
-
-                                <Link to="/project" >
-                                    <SubNavList> Web Development </SubNavList>
-                                </Link>
-                                <Link to="/project" >
-                                    <SubNavList> Mobile App </SubNavList>
-                                </Link>
-                                <Link to="/designs/figma" >
-                                    <SubNavList> UI/UX Designs  </SubNavList>
-                                </Link>
-                                <Link to="/designs/figma" >
-                                    <SubNavList> Graphics Design  </SubNavList>
-                                </Link>
-                            </SubNav>
-
-                        </SubNavWrapper>
-                    </NavList>
-
-                    <Link to="/about" className='nav-list'>
-                        <NavList> About Us</NavList>
-                    </Link>
-
-                </NavListWrapper>
-
-                <Contact>
-                    <Button
-                    varient={'primary'}
-                    title={'Get in Touch'}
-                    onclick={handleContact}
-                    icons={<MdArrowOutward />}
-                />
-                </Contact>
-
-                {/* MOBILE SIDE OPEN AND CLOSE BTN */}
-                <Menu onClick={handleNavBarOpenAndClose} >
-                    <IoMenu />
-                </Menu>
+        <Nav>
+            <Logo>{"</>"} <span>FrancisKuro</span></Logo>
+            <NavLinks>
+                {/* <a href="#about">About</a> */}
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#services">Services</a>
+                <a href="#contact">Contact</a>
+            </NavLinks>
+            <HireBtn onClick={handleContact}>Hire Me</HireBtn>
 
 
-                {/* MOBILE HERE */}
-                {navBarOpenAndClose &&
-                    <NavMobile SideBarToggle={navBarOpenAndClose}>
-
-                        <MobileNav>
-                            <Logo>
-                                <Link to="/">
-                                    <Img src={softtech} alt="logo" />
-                                </Link>
-                            </Logo>
-
-                            <Cancel onClick={handleNavBarOpenAndClose}>
-                                <LiaTimesSolid  />
-                            </Cancel>
-
-                        </MobileNav>
-
-                        <MobileNavList >
-
-                            <Link to="/" className='nav-list-mobile'>
-                            <SubNavMobileLi>Home</SubNavMobileLi>
-                            </Link>
-
-                            <SubNavMobileLi>
-                                Our Services
-                                <SubNavMobile onClick={handleNavBarOpenAndClose}>
-
-                                    <SubNavMobileUl >
-                                        <Link to="/web_dev" >
-                                            <SubNavMobileLi>
-                                                Web Development
-                                            </SubNavMobileLi>
-                                        </Link>
-
-                                        <Link to="/project" >
-                                            <SubNavMobileLi>
-                                                Mobile App
-                                            </SubNavMobileLi>
-                                        </Link>
-
-                                        <Link to="/ui/ux/designs" >
-                                            <SubNavMobileLi>
-                                                UI/UX Designs
-                                            </SubNavMobileLi>
-                                        </Link>
-
-                                        <Link to="/designs" >
-                                            <SubNavMobileLi>
-                                                Graphics Design
-                                            </SubNavMobileLi>
-                                        </Link>
-
-                                    </SubNavMobileUl>
-                                </SubNavMobile>
-
-                            </SubNavMobileLi>
-
-                            <Link to="/project" >
-                                <SubNavMobileLi>
-                                    About Us
-                                </SubNavMobileLi>
-                            </Link>
 
 
-                        </MobileNavList>
+            <Menu onClick={handleNavBarOpenAndClose} >
+                <IoMdMenu />
+            </Menu>
 
-                        <MobileBtn onClick={() => { handleNavBarOpenAndClose(); handleContact() }}> 
-                            Get In Touch
-                        </MobileBtn>
-                    </NavMobile>
-                }
-            </NavBarWrapper >
 
-        </>
+            {/* MOBILE HERE */}
+            {navBarOpenAndClose && <NavMobile SideBarToggle={navBarOpenAndClose}>
 
+
+
+                <MobileNav>
+                    <Logo>
+                        <Logo>{"</>"} <span>FrancisKuro</span></Logo>
+                    </Logo>
+
+                    <Cancel onClick={handleNavBarOpenAndClose}>
+                        <LiaTimesSolid />
+                    </Cancel>
+
+                </MobileNav>
+
+                <MobileNavList >
+                    {/* <a href="#about">About</a> */}
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                </MobileNavList>
+
+                <MobileBtn onClick={() => { handleNavBarOpenAndClose(); handleContact() }}>
+                    Get In Touch
+                </MobileBtn>
+
+            </NavMobile>}
+
+
+        </Nav>
     )
 }
 
-export default NavBar
+export default NavBar;
