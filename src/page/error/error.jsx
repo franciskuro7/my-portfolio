@@ -1,6 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from "react-router-dom"
-import Button from '../../component/call-to-action/button'
 import { Error } from '../../styles/error'
 
 
@@ -19,9 +18,9 @@ const ErrorPage = () => {
         <h1>404</h1>
         <h2>Page Not Found.</h2>
 
-        <Button
+        {/* <Button
           title={"HOME"}
-          onclick={Home}
+          onclick={Home} */}
         />
         
       </Error>
