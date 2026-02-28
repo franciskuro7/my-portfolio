@@ -12,6 +12,10 @@ export const Nav = styled.nav`
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+  
+  a{
+    text-decoration:none;
+ }
 
   @media (max-width: 769px){
     padding: 1rem;
