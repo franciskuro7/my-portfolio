@@ -5,6 +5,10 @@ export const ContactSection = styled.section`
   color: #fff;
   padding: 4rem 10%;
   font-family: 'Inter', sans-serif;
+
+   @media (max-width: 769px){
+    padding: 5rem 1rem;
+}
 `;
 
 export const Header = styled.div`
