@@ -41,6 +41,7 @@ export const FormGroup = styled.div`
   gap: 8px;
   label { font-size: 0.9rem; color: #ccc; }
   input, textarea {
+    width:100%;
     background: #1a1a1a;
     border: 1px solid #333;
     padding: 15px;
