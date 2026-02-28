@@ -7,11 +7,15 @@ export const Nav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 10%;
+  padding: 1rem 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
+
+  @media (max-width: 769px){
+    padding: 1rem;
+}
 `;
 
 export const NavBarWrapper = styled.nav`
@@ -49,10 +53,10 @@ export const NavLinks = styled.div`
 `;
 
 export const HireBtn = styled.button`
-    color: #fff;
+    color: #4ade80;
     background:transparent;
     cursor: pointer;
-    border: .9px solid #fff;
+    border: .9px solid #4ade80;
     padding: 10px;
     border-radius: 4px;
   @media (max-width: 769px){
@@ -105,7 +109,7 @@ export const Cancel = styled.div`
 `;
 export const MobileNavList = styled.ul`
     width: 100%;
-    padding: 0px 2rem;
+    padding: 0px 1rem;
     display: flex;
     flex-direction:column;
     gap: 2rem;
@@ -127,12 +131,13 @@ export const MobileNav = styled.div`
 `;
 
 
-export const MobileBtn = styled.span`
+export const MobileBtn = styled.button`
     position: absolute;
-    color: #fff;
+    color: #4ade80;
+    background:transparent;
     cursor: pointer;
-    border: .9px solid #fff;
-    padding: 10px;
+    border: .9px solid #4ade80;
+    padding: 10px 15px;
     border-radius: 4px;
     bottom: 2rem;
     left: 1rem;

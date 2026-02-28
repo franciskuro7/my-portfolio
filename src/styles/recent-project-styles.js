@@ -3,16 +3,19 @@ import styled from "styled-components";
 export const ProjectsSection = styled.section`
   background-color: #0a0a0a;
   color: #fff;
-  padding: 80px 10%;
+  padding: 2.5rem 10%;
   font-family: 'Inter', sans-serif;
+  @media (max-width: 890px){
+    padding: 2.5rem 1rem;
+}
 `;
 
 export const Header = styled.div`
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 2.5rem;
   h2 {
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 0.185rem;
   }
   p {
     color: #888;
@@ -23,15 +26,20 @@ export const Header = styled.div`
 export const FilterContainer = styled.div`
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 50px;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+
+  @media (max-width: 890px){
+    flex-wrap:wrap;
+}
 `;
 
 export const FilterBtn = styled.button`
   background: ${props => props.active ? 'rgba(74, 222, 128, 0.1)' : '#1a1a1a'};
   color: ${props => props.active ? '#4ade80' : '#888'};
   border: 1px solid ${props => props.active ? '#4ade80' : 'transparent'};
-  padding: 10px 24px;
+  padding: 0.325rem 1.5rem;
   border-radius: 30px;
   cursor: pointer;
   font-size: 0.9rem;
@@ -67,12 +75,13 @@ export const ImageWrapper = styled.div`
   position: relative;
   height: 220px;
   background: #1f1f1f;
+  padding:1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   
   img {
-    width: 90%;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
@@ -81,8 +90,8 @@ export const ImageWrapper = styled.div`
 
 export const Badge = styled.span`
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 5px;
+  left:5px;
   background: rgba(0,0,0,0.6);
   padding: 4px 12px;
   border-radius: 15px;
@@ -91,18 +100,19 @@ export const Badge = styled.span`
 `;
 
 export const CardContent = styled.div`
-  padding: 25px;
+  padding: 1rem;
+  
 `;
 
 export const ProjectTitle = styled.h3`
   font-size: 1.4rem;
-  margin-bottom: 12px;
+  line-height:1.5;
 `;
 
 export const ProjectDesc = styled.p`
   color: #888;
   font-size: 0.9rem;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 20px;
 `;
 
@@ -117,7 +127,7 @@ export const TechTag = styled.span`
   background: #1a1a1a;
   color: #4ade80;
   font-size: 0.75rem;
-  padding: 5px 12px;
+  padding: 4px 10px;
   border-radius: 15px;
   border: 1px solid #222;
 `;

@@ -3,15 +3,18 @@ import styled from 'styled-components';
 export const ServicesContainer = styled.section`
   background-color: #000;
   color: #fff;
-  padding: 80px 10%;
+  padding: 5rem 10%;
   font-family: 'Inter', sans-serif;
+   @media (max-width: 769px){
+    padding: 5rem 1rem;
+}
 `;
 
 export const Grid = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: minmax(200px, auto);
-  gap: 20px;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 
@@ -24,17 +27,16 @@ export const ServiceCard = styled.div`
   background: #111;
   border: 1px solid #222;
   border-radius: 24px;
-  padding: 40px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 15px;
   transition: border-color 0.3s ease;
 
   &:hover {
-    border-color: #39FF14; /* Neon green */
+    border-color: #39FF14;
   }
 
-  /* Spanning logic to match the image layout */
   grid-column: ${props => props.wide ? 'span 2' : 'span 1'};
 `;
 
@@ -51,7 +53,7 @@ export const IconWrapper = styled.div`
 `;
 
 export const Title = styled.h3`
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 5vw, 1.5rem);
   margin: 0;
   font-weight: 600;
 `;

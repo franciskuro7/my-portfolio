@@ -3,18 +3,22 @@ import styled from 'styled-components';
 export const SkillsSection = styled.section`
   background-color: #000;
   color: #fff;
-  padding: 100px 10%;
+  padding: 5.5rem 10%;
   text-align: center;
   margin-top:5rem;
+   @media (max-width: 769px){
+    padding: 5rem 1rem;
+}
 `;
 
 export const HeaderArea = styled.div`
-  margin-bottom: 60px;
+  margin-bottom: 2rem;
 `;
 export const Badge = styled.span`
     background: rgba(74, 222, 128, 0.1);
     color: #4ade80;
     padding: 0.5rem 1rem;
+    margin:3rem;
     border-radius: 20px;
     width: fit-content;
     font-size: 0.8rem;
@@ -22,19 +26,15 @@ export const Badge = styled.span`
 `
 export const SkillsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
   text-align: left;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const SkillCard = styled.div`
   background: #111;
   border-radius: 24px;
-  padding: 40px 30px;
+  padding: 2rem 1.5rem;
   border: 1px solid #222;
 `;
 
@@ -63,8 +63,8 @@ export const SkillInfo = styled.div`
 `;
 
 export const LevelBadge = styled.span`
-  font-size: 0.7rem;
-  padding: 4px 12px;
+  font-size: 0.75rem;
+  padding: 1px 10px;
   border-radius: 100px;
   border: 1px solid ${props => props.color || '#39FF14'};
   color: ${props => props.color || '#39FF14'};

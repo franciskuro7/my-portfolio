@@ -1,62 +1,57 @@
 import React from 'react';
 import profile from "../assets/img/profile.jpeg"
-import {
-    HeroContainer, ContentWrapper, TextSection, Tagline, Title, Description,
-    GetInTouchBtn, StatsContainer, StatItem, ImageSection, TechOverlay
-} from '../styles/hero.styles';
-
-
-
-
+import * as S from '../styles/hero.styles';
 
 const Hero = () => {
     return (
-        <HeroContainer>
-            <ContentWrapper>
-                <TextSection>
-                    <Tagline>★ Full Stack Developer | Based in Nigeria</Tagline>
-                    <Title>Helping business and Company Build Websites.</Title>
-                    <Description>
-                        Hey! I'm Fineface Kuroghoekigha Francis, a Full Stack Website Developer from
-                        Nigeria who loves building websites that make businesses
-                        stand out. I work with React.js, Next.js, Node.js,
-                        and Express.js to create fast, user-friendly sites that
-                        actually solve problems. I'm always
-                        excited to take on new challenges. Got a project in mind?
-                        Let's make it happen!
-                    </Description>
-                    <GetInTouchBtn>Get in Touch</GetInTouchBtn>
+        <S.HeroContainer>
+            <S.ContentWrapper>
+                <S.TextSection>
+                    <S.Tagline>★ Full Stack Developer | Based in Nigeria</S.Tagline>
+                    <S.Title>Helping business and Company Build Websites.</S.Title>
+                    <S.Description>
+                        Hi!, I'm a Full Stack  Developer from Nigeria who loves
+                        building modern scalable application with React.js, Next.js,
+                        Node.js, and Express.js transforming ideas into exceptional
+                        digital experience. I'm always excited to take on new challenges.
+                        Got a project in mind? Let's make it happen!
+                    </S.Description>
+                    <S.GetInTouchBtn>Get in Touch</S.GetInTouchBtn>
 
-                    <StatsContainer>
-                        <StatItem>
+                    <S.StatsContainer>
+                        <S.StatItem>
                             <h3>3+</h3>
                             <p>Years <br /> Experience</p>
-                        </StatItem>
-                        <StatItem>
+                        </S.StatItem>
+                        <S.StatItem>
                             <h3>50+</h3>
                             <p>Projects <br /> Completed</p>
-                        </StatItem>
-                        <StatItem>
+                        </S.StatItem>
+                        <S.StatItem>
                             <h3>15+</h3>
                             <p>Technologies</p>
-                        </StatItem>
-                        <StatItem>
+                        </S.StatItem>
+                        <S.StatItem>
                             <h3>98%</h3>
-                        </StatItem>
-                    </StatsContainer>
-                </TextSection>
+                        </S.StatItem>
+                    </S.StatsContainer>
+                </S.TextSection>
 
-                <ImageSection>
-                    <img src={profile} alt="Developer" />
-                    <TechOverlay>
+                <S.ImageSection>
+                    <S.ImagetTarget>
+                        <img src={profile} alt="Developer" />
+                    </S.ImagetTarget>
+
+                    <S.Tagline style={{ textAlign: "center", margin: "5px auto" }}>Fineface Kuroghoekigha Francis</S.Tagline>
+                    <S.TechOverlay>
                         <span>⚛️</span>
                         <span>🟢</span>
                         <span>📦</span>
                         <span>🍃</span>
-                    </TechOverlay>
-                </ImageSection>
-            </ContentWrapper>
-        </HeroContainer>
+                    </S.TechOverlay>
+                </S.ImageSection>
+            </S.ContentWrapper>
+        </S.HeroContainer>
     );
 };
 

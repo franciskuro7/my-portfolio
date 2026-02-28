@@ -16,23 +16,24 @@ const RecentsProjects = () => {
             title: "Task Management Dashboard",
             category: "Web Apps",
             desc: "Collaborative project management tool with drag-and-drop kanban boards, real-time updates, and tea...",
-            tech: ["React", "TypeScript", "Firebase", "Tailwind"],
+            tech: ["React", "Firebase", "Styled-components"],
             metric: "↗ 500+ active users"
         },
         {
             title: "Social Media Analytics",
             category: "Web Apps",
             desc: "Real-time social media analytics dashboard with data visualization, sentiment analysis, and automated...",
-            tech: ["Next.js", "Chart.js", "PostgreSQL", "Redis"],
+            tech: ["Next.js", "Chart.js", "MongoDB", "Redis"],
             metric: "↗ 10K+ data points/day"
         },
         {
             title: "Weather Forecast App",
             category: "Web Apps",
             desc: "Beautiful weather application with hourly forecasts, interactive maps, and location-based alerts.",
-            tech: ["React", "OpenWeather API", "Mapbox", "Tailwind"],
+            tech: ["React", "OpenWeather API", "Mapbox", "Styled-components"],
             metric: "↗ Live weather data"
-        }
+        },
+        
     ];
 
     const categories = ['All', 'Web Apps', 'UI Components', 'Full Stack'];
@@ -40,8 +41,8 @@ const RecentsProjects = () => {
     return (
         <ProjectsSection id="projects">
             <Header>
-                <p>Showcasing my best work and achievements</p>
                 <h2>Featured Projects</h2>
+                <p>Showcasing my best work and achievements</p>
             </Header>
 
             <FilterContainer>
@@ -61,7 +62,7 @@ const RecentsProjects = () => {
                     <ProjectCard key={index}>
                         <ImageWrapper>
                             <Badge>{item.category}</Badge>
-                            <div style={{ width: '80%', height: '140px', background: 'linear-gradient(135deg, #2c1a4d 0%, #1a1a1a 100%)', borderRadius: '8px', border: '1px solid #444' }}></div>
+                            <div style={{ width: '100%', height: '100%', background: 'linear-gradient(135deg, #2c1a4d 0%, #1a1a1a 100%)', borderRadius: '8px', border: '1px solid #444' }}></div>
                         </ImageWrapper>
 
                         <CardContent>

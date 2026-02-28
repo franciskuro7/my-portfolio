@@ -34,15 +34,17 @@ const NavBar = () => {
 
     return (
         <Nav>
-            <Logo>{"</>"} <span>FrancisKuro</span></Logo>
+            <a href="/">
+                <Logo>{"</>"} <span>FrancisKuro</span></Logo>
+            </a>
             <NavLinks>
                 {/* <a href="#about">About</a> */}
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="/all-projects">Projects</a>
                 <a href="#services">Services</a>
                 <a href="#contact">Contact</a>
             </NavLinks>
-            <HireBtn onClick={handleContact}>Hire Me</HireBtn>
+            <HireBtn onClick={handleContact}>Get In Touch</HireBtn>
 
 
 
@@ -71,7 +73,7 @@ const NavBar = () => {
                 <MobileNavList >
                     {/* <a href="#about">About</a> */}
                     <a href="#skills">Skills</a>
-                    <a href="#projects">Projects</a>
+                    <a href="/all-projects">Projects</a>
                     <a href="#services">Services</a>
                     <a href="#contact">Contact</a>
                 </MobileNavList>

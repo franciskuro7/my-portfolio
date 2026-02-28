@@ -3,19 +3,20 @@ import styled from 'styled-components';
 export const HeroSection = styled.section`
   background-color: #000;
   color: #fff;
-  padding: 100px 10%;
+  padding-top: 6rem;
+  padding-left: clamp(1rem, 5vw, 30rem);
+  padding-right: clamp(1rem, 5vw, 30rem);
+  padding-bottom: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 50px;
   
-
   @media (max-width: 1024px) {
     flex-direction: column;
   }
 `;
 
-// --- Left Column ---
 export const ContentSide = styled.div`
   flex: 1;
 `;
@@ -34,7 +35,7 @@ export const Badge = styled.span`
 `;
 
 export const MainTitle = styled.h1`
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   line-height: 1.1;
   margin-bottom: 30px;
   font-weight: 700;
@@ -58,28 +59,29 @@ export const StatItem = styled.div`
   padding-left: 15px;
   
   h4 {
-    font-size: 1.8rem;
+    font-size: clamp(1rem, 5vw, 1.8rem);
     margin: 0;
   }
   span {
     color: #666;
     font-size: 0.8rem;
+    line-height:1.1;
     text-transform: uppercase;
   }
 `;
 
-// --- Right Column ---
+
 export const FeatureSide = styled.div`
   flex: 1;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 1rem;
 `;
 
 export const FeatureCard = styled.div`
   background: #111;
   border-radius: 20px;
-  padding: 30px;
+  padding: 1rem;
   grid-column: ${props => props.full ? 'span 2' : 'span 1'};
 `;
 
