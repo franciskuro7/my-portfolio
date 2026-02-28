@@ -1,9 +1,8 @@
-import React from 'react';
 import * as S from '../styles/footer-styles';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
-import { HiX } from 'react-icons/hi';
 import { BsMailbox } from 'react-icons/bs';
-import { MdQrCode2 } from 'react-icons/md';
+import { AiOutlineTwitter } from 'react-icons/ai';
+import { HiEnvelope } from 'react-icons/hi2';
 
 
 const Footer = () => {
@@ -15,24 +14,16 @@ const Footer = () => {
         <S.Logo>{"</>"} <span>FrancisKuro</span>
         </S.Logo>
 
-        <S.NavLinks>
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
-        </S.NavLinks>
-
         <S.SocialIcons>
-          <a href="#"><FaGithub size={18} /></a>
+          <a href="https://github.com/franciskuro7/"><FaGithub size={18} /></a>
           <a href="#"><FaLinkedin size={18} /></a>
-          <a href="#"><HiX size={18} /></a>
-          <a href="#"><BsMailbox size={18} /></a>
+          <a href="#"><AiOutlineTwitter size={18} /></a>
+          <a href="mailto:franciskuro7@gmail.com"><HiEnvelope size={18} /></a>
         </S.SocialIcons>
       </S.FooterTop>
 
       <S.Copyright>
-        <p>© {currentYear} Alex. All rights reserved.</p>
-        <p>Built with React & Styled Components</p>
+        <p> © {currentYear} FrancisKuro. All rights reserved.</p>
       </S.Copyright>
     </S.FooterContainer>
   );

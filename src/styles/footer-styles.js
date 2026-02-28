@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
 export const FooterContainer = styled.footer`
+  width:100%;
   background-color: #000;
   border-top: 1px solid #111;
-  padding: 60px 10% 30px;
+  padding: 60px 10% 10px;
   color: #fff;
 `;
 
@@ -28,25 +29,6 @@ export const Logo = styled.div`
   span { color: #fff; }
 `;
 
-export const NavLinks = styled.nav`
-  display: flex;
-  gap: 30px;
-
-  a {
-    color: #888;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-
-    &:hover {
-      color: #39FF14;
-    }
-  }
-
-  @media (max-width: 480px) {
-    gap: 15px;
-  }
-`;
 
 export const SocialIcons = styled.div`
   display: flex;

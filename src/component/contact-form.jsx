@@ -5,6 +5,9 @@ import {
     ContactSection, Header, Grid, FormCard, FormGroup, SendButton, InfoSection,
     ContactTile, IconBox, TileText, SocialContainer, SocialIcon
 } from "../styles/contact-form-styles"
+import { HiLocationMarker } from 'react-icons/hi';
+import { AiFillGithub, AiFillLinkedin, AiOutlineTwitter } from 'react-icons/ai';
+import { HiEnvelope } from 'react-icons/hi2';
 
 
 const ContactForm = () => {
@@ -41,27 +44,27 @@ const ContactForm = () => {
                     </div>
 
                     <ContactTile>
-                        <IconBox>✉️</IconBox>
+                        <IconBox> <HiEnvelope size={20}/></IconBox>
                         <TileText>
                             <span>Email</span>
-                            <strong>alex@timetoprogram.com</strong>
+                            <strong>franciskuro7@gmail.com</strong>
                         </TileText>
                     </ContactTile>
 
                     <ContactTile>
-                        <IconBox>📍</IconBox>
+                        <IconBox>< HiLocationMarker size={20}/> </IconBox>
                         <TileText>
                             <span>Location</span>
-                            <strong>San Francisco, CA</strong>
+                            <strong>Bayelsa State, Nigeria</strong>
                         </TileText>
                     </ContactTile>
 
                     <div>
                         <p style={{ marginBottom: '10px' }}>Connect with me</p>
                         <SocialContainer>
-                            <SocialIcon href="#">🐙</SocialIcon> {/* Github */}
-                            <SocialIcon href="#">🔗</SocialIcon> {/* LinkedIn */}
-                            <SocialIcon href="#">🐦</SocialIcon> {/* Twitter */}
+                            <SocialIcon href="https://github.com/franciskuro7/"><AiFillGithub size={25}/></SocialIcon>
+                            <SocialIcon href="#"><AiFillLinkedin size={25}/></SocialIcon> 
+                            <SocialIcon href="#"><AiOutlineTwitter size={25}/></SocialIcon> 
                         </SocialContainer>
                     </div>
                 </InfoSection>

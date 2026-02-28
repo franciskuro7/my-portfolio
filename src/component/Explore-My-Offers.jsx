@@ -43,7 +43,7 @@ const ExploreMyOffer = () => {
                 </S.StatsContainer>
             </S.ContentSide>
 
-            {/* Right Side */}
+  
             <S.FeatureSide>
                 <S.FeatureCard full>
                     <HiCode color="#39FF14" style={{ marginBottom: '15px' }} />

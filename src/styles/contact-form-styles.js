@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const ContactSection = styled.section`
   background-color: #0a0a0a;
   color: #fff;
-  padding: 100px 10%;
+  padding: 4rem 10%;
   font-family: 'Inter', sans-serif;
 `;
 
 export const Header = styled.div`
   text-align: center;
   margin-bottom: 60px;
-  h2 { font-size: 3rem; margin-bottom: 10px; }
+  h2 { font-size: clamp(1.5rem, 5vw, 3rem); margin-bottom: 10px; }
   p { color: #888; font-size: 1.1rem; }
 `;
 
@@ -72,13 +72,13 @@ export const InfoSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 30px;
-  h3 { font-size: 1.8rem; margin-bottom: 10px; }
-  p { color: #888; line-height: 1.6; }
+  h3 { font-size: clamp(0.625rem, 5vw, 1.8rem); margin-bottom: 10px; }
+  p { color: #888; line-height: 1.3; }
 `;
 
 export const ContactTile = styled.div`
   background: #141414;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 16px;
   display: flex;
   align-items: center;
